@@ -28,11 +28,24 @@
 ### Search Query Patterns
 
 When searching for roles, use variations of:
+
+**Leadership track (Manager / Director / Head / VP):**
 - `"Head of Design"` / `"Director of Product Design"` / `"VP of Design"`
 - `"Design Manager"` + `"remote"` + `"Canada"` OR `"open to Canada"`
-- `"Staff Designer"` / `"Principal Designer"` (for IC senior track)
+- `"Director of Design"` + health tech OR AI OR SaaS + remote Canada
+
+**Senior IC track (high-leverage individual contributor):**
+- `"Staff Product Designer"` + remote Canada
+- `"Lead Product Designer"` + remote Canada
+- `"Principal Product Designer"` + remote Canada
+- `"Staff Designer"` / `"Principal Designer"` + product context (filter out agency/freelance)
+
+**Cross-cutting queries (catches both tracks):**
+- `site:lever.co OR site:greenhouse.io` + `"Director of Design" OR "Head of Design" OR "Staff Product Designer" OR "Lead Product Designer"` + remote Canada
 - `"Design Lead"` + product context (filter out agency/freelance)
-- Filter: Posted within last 30 days; Remote or Canada
+- `"Head of Design" OR "Staff Product Designer" OR "Lead Product Designer"` + health tech OR AI SaaS + remote Canada
+
+**Triage note for IC roles:** Staff/Lead/Principal roles pass the seniority filter only if they are explicitly high-scope IC positions at companies where IC designers have strategic influence (typically Series B+ product-led companies). Filter out roles that are labelled senior but read as execution-only.
 
 ---
 
