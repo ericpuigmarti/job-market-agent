@@ -16,13 +16,28 @@
 | **Remote.co / We Work Remotely** | Remote-first roles | Filter: design leadership; useful for US-remote-open roles |
 | **Jobvite / Workday boards** | Mid-to-large company roles | Often used by health tech and SaaS companies |
 
+### VC Fund & Curated Job Boards
+
+High signal — companies in these portfolios tend to have strong product cultures and real design investment. Search or browse these on every sweep.
+
+| Source | URL | Notes |
+|---|---|---|
+| **Y Combinator Jobs** | https://www.ycombinator.com/jobs | Filter by role type; YC companies skew product-led and often hire remote |
+| **Designer Fund Job Board** | https://jobs.designerfund.com/jobs | Highest signal for design-mature companies; explicitly curated for design leadership |
+| **a16z Job Board** | https://jobs.a16z.com/jobs | Andreessen Horowitz portfolio; large and varied; filter by design/product |
+| **Sequoia Job Board** | https://jobs.sequoiacap.com/jobs | Sequoia portfolio; includes many Canadian-open companies |
+| **First Round Job Board** | https://jobs.firstround.com | Known for backing product-quality companies (Notion, Figma, etc.) |
+| **Neo Job Board** | https://neo.com/startups | Early-stage accelerator; browse portfolio and check individual company career pages |
+| **MaRS Discovery District** | https://techjobs.marsdd.com | Canadian tech ecosystem; good for Ontario-based or Canada-remote roles |
+
+**How to use VC boards:** Search for "design" or "designer" with filters for seniority. For Neo and similar boards without search, scan the startup list and manually check career pages of companies that match Eric's profile (health tech, AI, SaaS, Series B+).
+
 ### Secondary Sources
 
 | Source | Use | Notes |
 |---|---|---|
 | **Indeed Canada** | Broad coverage | Higher noise; useful as a signal check |
 | **Glassdoor Jobs** | Cross-references salary data with listing | Useful for comp validation on specific roles |
-| **Y Combinator Work at a Startup** | YC-backed companies | Good for high-growth product-led companies |
 | **Notion / Coda job pages** | Some companies post there | Niche but worth checking for design-forward companies |
 
 ### Search Query Patterns
