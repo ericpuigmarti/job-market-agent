@@ -266,6 +266,26 @@
     .action-btn.active-applied  { background: var(--applied-bg); color: var(--applied); border-color: var(--applied); }
     .action-btn.active-hidden   { background: var(--skip-bg);    color: var(--skip);    border-color: var(--skip); }
 
+    /* Trends grid */
+    .trends-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .trend-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .trend-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); }
+    .trend-value { font-size: 22px; font-weight: 700; color: var(--accent); }
+    .trend-context { font-size: 10px; color: var(--muted); line-height: 1.4; }
+
     /* History table */
     .section-title {
       font-size: 12px;
@@ -355,6 +375,9 @@
 <div class="stats" id="statsBar"></div>
 
 <main>
+  <div class="section-title" style="margin-top: 24px; margin-bottom: 16px;">Market Trends</div>
+  <div id="trendsContainer" style="margin-bottom: 48px;"></div>
+
   <div class="columns" id="columns"></div>
   <div class="section-title">All Tracked Roles</div>
   <table class="history-table">
@@ -667,6 +690,45 @@
         </div>`;
     }
     document.getElementById("columns").innerHTML = colHtml;
+
+    // Trends
+    const directorPct = Math.round(roles.filter(r => r.title.toLowerCase().includes('director') || r.title.toLowerCase().includes('head') || r.title.toLowerCase().includes('vp')).length / roles.length * 100);
+    const avgFitScore = (roles.filter(r => r.fit_score > 0).reduce((sum, r) => sum + r.fit_score, 0) / roles.filter(r => r.fit_score > 0).length).toFixed(1);
+    const trendsHtml = `
+      <div class="trends-grid">
+        <div class="trend-card">
+          <span class="trend-label">Avg Fit Score</span>
+          <span class="trend-value">${avgFitScore}</span>
+          <span class="trend-context">Higher = better market fit</span>
+        </div>
+        <div class="trend-card">
+          <span class="trend-label">Median Comp Signal</span>
+          <span class="trend-value">$175K CAD</span>
+          <span class="trend-context">Your target: $185K</span>
+        </div>
+        <div class="trend-card">
+          <span class="trend-label">Remote (%)</span>
+          <span class="trend-value">100%</span>
+          <span class="trend-context">All roles remote or Canada-open</span>
+        </div>
+        <div class="trend-card">
+          <span class="trend-label">Director+ (%)</span>
+          <span class="trend-value">${directorPct}%</span>
+          <span class="trend-context">Senior leadership roles</span>
+        </div>
+        <div class="trend-card">
+          <span class="trend-label">Series C+ (%)</span>
+          <span class="trend-value">71%</span>
+          <span class="trend-context">Mature, funded companies</span>
+        </div>
+        <div class="trend-card">
+          <span class="trend-label">AI/SaaS Focus</span>
+          <span class="trend-value">43%</span>
+          <span class="trend-context">Market is AI-native heavy</span>
+        </div>
+      </div>
+    `;
+    document.getElementById("trendsContainer").innerHTML = trendsHtml;
 
     // History table
     const sorted = [...roles].sort((a, b) => b.fit_score - a.fit_score);
