@@ -11,7 +11,7 @@
 - **Location:** Canada (remote-first)
 - **Team scope:** 3-person design team covering B2B, B2C, and B2I experiences for 7M+ Canadians
 - **Reporting to:** [Fill in: title of current manager]
-- **Current employer:** Maple Inc. (www.getmaple.ca)
+- **Current employer:** Maple Inc. (www.getmaple.ca) — Jan 2024–Present
 
 ---
 
